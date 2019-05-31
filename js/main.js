@@ -1,39 +1,24 @@
-window.onload = function(){
-    // config
-    var config = {
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    scene: {
         preload: preload,
         create: create,
-        render: render,
-        update: update,
-        resize: resize
+        update: update
     }
-
-    // create game
-    var game = new Phaser.Game(200, 200, Phaser.CANVAS, 'tutorial-1', config);
-
-    // preload() happens here
-    function preload() {
-        console.log('call::preload()');
-    }
-
-    // create() happens here
-    function create() {
-        console.log('call::create()');
-
-        // set background color
-        game.stage.backgroundColor = '#787878';
-    }
-
-    function render() {
-        // console.log('call::render()');
-    }
-
-    function update() {
-        // console.log('call::update()');
-    }
-
-    function resize() {
-        // console.log('call::resize()');
-    }
-
 };
+
+var game = new Phaser.Game(config);
+
+function preload ()
+{
+}
+
+function create ()
+{
+}
+
+function update ()
+{
+}
